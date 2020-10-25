@@ -1,0 +1,12 @@
+baseurl = "https://hsuzo.github.io"
+title = "Out Blog"
+author = "Bill Check"
+theme = "aether"
+languageCode = "zh"
+
+[params]
+	brand = "兼听则明"
+
+[markup]
+  [markup.highlight]
+    style = "igor"

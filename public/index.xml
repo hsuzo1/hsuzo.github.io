@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Out Blog</title><link>https://hsuzo.github.io/</link><description>Recent content on Out Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Sun, 25 Oct 2020 21:34:23 +0800</lastBuildDate><atom:link href="https://hsuzo.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Noteforgit</title><link>https://hsuzo.github.io/post/noteforgit/</link><pubDate>Sun, 25 Oct 2020 21:34:23 +0800</pubDate><guid>https://hsuzo.github.io/post/noteforgit/</guid><description>Hugo Package wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_0.76.5_Linux-64bit.tar.gz tar -xzvf hugo_0.76.5_Linux-64bit.tar.gz sudo mv hugo /usr/local/bin/hugo hugo version 创建仓库hug0 本地新建目录 g:\hugo\hugo\
+新建一个测速网页文件index.html
+&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;我的第一个 HTML 页面&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;p&amp;gt;body 元素的内容会显示在浏览器中。&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;title 元素的内容会显示在浏览器的标题栏中。&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; git init echo ^&amp;lt;h1^&amp;gt; Test Caddy Working^&amp;lt;/h1^&amp;gt; git add . git commit -m &amp;quot;first Test&amp;quot; git remote add origin https://github.com/hsuzo1/hug0 git push -u origin master push后在仓库的master下可见了 创建vps上的网页目录
+mkdir /var/www mkdir /var/www/hugo cd /var/www echo &amp;quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;quot; | sudo tee -a /etc/apt/sources.</description></item><item><title>Vs</title><link>https://hsuzo.github.io/post/vs/</link><pubDate>Thu, 22 Oct 2020 09:42:40 +0800</pubDate><guid>https://hsuzo.github.io/post/vs/</guid><description>接下来到当前Repository文件夹根目录中，如果没有初始化过，安装文章开始初始化的方法，进行初始化。 然后执行下面的命令
+git remote add origin https://github.com/xuanhun/vscode.git git pull origin master 现在我们查看一下.git文件夹下的config文件，可以看到添加了远程Reps地址。 再次修改MD，push</description></item><item><title>Hugo的中文博文</title><link>https://hsuzo.github.io/post/zh/001/</link><pubDate>Tue, 20 Oct 2020 16:24:37 +0800</pubDate><guid>https://hsuzo.github.io/post/zh/001/</guid><description>一室一厅电线用量 电线BV1.5平方单色线2卷（即，零线、火线各100米）
+电线BV2.5平方淡色线3卷（即，零线、火线、地线各100米）
+4芯电话线30米，高清电视线30米，电脑线30米
+二室一厅电线用量 电线BV1.5平方单色线100米2卷，50米2卷（即，零线、火线各150米）
+电线BV2.5平方淡色线100米3卷，50米3卷（即，零线、火线、地线各150米）
+4芯电话线50米，高清电视线50米，电脑线50米
+三室一厅电线用量 电线BV1.5平方单色线100米4卷（即，零线、火线各200米）
+电线BV2.5平方淡色线100米6卷（即，零线、火线、地线各200米） 4芯电话线50米，高清电视线50米，电脑线50米</description></item><item><title>第一个博客内容</title><link>https://hsuzo.github.io/post/abc/</link><pubDate>Tue, 20 Oct 2020 10:10:55 +0800</pubDate><guid>https://hsuzo.github.io/post/abc/</guid><description>Getting started Installation Create a new Hugo site:
+$ hugo new site [path] Clone this repository into themes/ directory:
+$ cd [path] $ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c Add this line in the config.toml file:
+theme = &amp;quot;m10c&amp;quot; Configuration In your config.toml file, define the following variables in params:
+author: Name of the author description: Short description of the author avatar: Path of file containing the author avatar image menu_item_separator: Separator between each menu item.</description></item></channel></rss>
