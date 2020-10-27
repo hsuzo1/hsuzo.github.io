@@ -1,0 +1,111 @@
+<!doctype html><html lang=en><head><title>Github版本控制的方法 ::
+PR's blog — 聼其言觀其行</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="https://github.com 官网登录 下载git客户端   1.生成秘钥📜 打开git客户端，执行命令 ssh-keygen -t rsa -C &amp;#34;github的邮箱账号&amp;#34; 注意，需要给.ssh的7000权限
+sudo chmod -R 700 ~/.ssh 去这个目录，寻找id_rsa.pub文件，把文件的字符串复制。 登录官网github.com右上角人头像🤵➜setting a ssh and gpg keys a new ssh key➜制的内容➜add ssh keys
+2. 验证秘钥 git客户端输入ssh -T git@github.com ,按提示输入 yes 提示successfully即可
+3. 在服务器添加完公钥之后，ssh服务器然后报了这个错误 sign_and_send_pubkey: signing failed: agent refused operation 然后执行了以下命令才好。。
+eval &amp;quot;$(ssh-agent -s)&amp;quot; ssh-add 4.建立身份标识 git config --global user.name 'github邮箱用户’ git config --global user.email github邮箱用户  案例1：把项目提交到github仓库 进入d盘，你的项目地址
+ 注意，有时候一些文件隐藏了.gitignore,凡是在目录中包含这个文件，将被忽略提交到github"><meta name=keywords content><meta name=robots content="noodp"><link rel=canonical href=/post/tech/github-version/><link rel=stylesheet href=/assets/style.css><link rel=stylesheet href=/style.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=/img/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=/img/favicon.png><link href=/assets/fonts/Inter-Italic.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/assets/fonts/Inter-Regular.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/assets/fonts/Inter-Medium.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/assets/fonts/Inter-MediumItalic.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/assets/fonts/Inter-Bold.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/assets/fonts/Inter-BoldItalic.woff2 rel=preload type=font/woff2 as=font crossorigin><meta name=twitter:card content="summary"><meta name=twitter:title content="Github版本控制的方法"><meta name=twitter:description content="https://github.com 官网登录 下载git客户端   1.生成秘钥📜 打开git客户端，执行命令 ssh-keygen -t rsa -C &#34;github的邮箱账号&#34; 注意，需要给.ssh的7000权限
+sudo chmod -R 700 ~/.ssh 去这个目录，寻找id_rsa.pub文件，把文件的字符串复制。 登录官网github.com右上角人头像🤵➜setting a ssh and gpg keys a new ssh key➜制的内容➜add ssh keys
+2. 验证秘钥 git客户端输入ssh -T git@github.com ,按提示输入 yes 提示successfully即可
+3. 在服务器添加完公钥之后，ssh服务器然后报了这个错误 sign_and_send_pubkey: signing failed: agent refused operation 然后执行了以下命令才好。。
+eval &#34;$(ssh-agent -s)&#34; ssh-add 4.建立身份标识 git config --global user.name 'github邮箱用户’ git config --global user.email github邮箱用户  案例1：把项目提交到github仓库 进入d盘，你的项目地址
+ 注意，有时候一些文件隐藏了.gitignore,凡是在目录中包含这个文件，将被忽略提交到github"><meta property="og:title" content="Github版本控制的方法"><meta property="og:description" content="https://github.com 官网登录 下载git客户端   1.生成秘钥📜 打开git客户端，执行命令 ssh-keygen -t rsa -C &#34;github的邮箱账号&#34; 注意，需要给.ssh的7000权限
+sudo chmod -R 700 ~/.ssh 去这个目录，寻找id_rsa.pub文件，把文件的字符串复制。 登录官网github.com右上角人头像🤵➜setting a ssh and gpg keys a new ssh key➜制的内容➜add ssh keys
+2. 验证秘钥 git客户端输入ssh -T git@github.com ,按提示输入 yes 提示successfully即可
+3. 在服务器添加完公钥之后，ssh服务器然后报了这个错误 sign_and_send_pubkey: signing failed: agent refused operation 然后执行了以下命令才好。。
+eval &#34;$(ssh-agent -s)&#34; ssh-add 4.建立身份标识 git config --global user.name 'github邮箱用户’ git config --global user.email github邮箱用户  案例1：把项目提交到github仓库 进入d盘，你的项目地址
+ 注意，有时候一些文件隐藏了.gitignore,凡是在目录中包含这个文件，将被忽略提交到github"><meta property="og:type" content="article"><meta property="og:url" content="/post/tech/github-version/"><meta property="article:published_time" content="2020-10-27T18:34:17+08:00"><meta property="article:modified_time" content="2020-10-27T18:34:17+08:00"><meta property="og:site_name" content="PR's blog"></head><body class=dark-theme><div class=container><header class=header><span class=header__inner><a href=/ class=logo style=text-decoration:none><span class=logo__mark><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44"><path fill="none" d="M15 8l14.729 14.382L15 35.367"/></svg></span><span class=logo__text>兼聽則明...</span>
+<span class=logo__cursor></span></a><span class=header__right><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/categories/tech>Technical</a></li><li><a href=/showcase>Showcase</a></li><li><a href=/about>About</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/categories/tech>Technical</a></li><li><a href=/showcase>Showcase</a></li><li><a href=/about>About</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span><span class=theme-toggle><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41C32.4934 41 41 32.4934 41 22 41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"/></svg></span></span></span></header><div class=content><div class=post><h1 class=post-title>Github版本控制的方法</h1><div class=post-meta><span class=post-date>2020.10.27</span></div><span class=post-tags><a href=/tags/github/>#github</a>&nbsp;</span><div class=post-content><blockquote><ul><li><a href=https://github.com>https://github.com</a></li><li>官网登录</li><li>下载git客户端</li></ul></blockquote><h4 id=1生成秘钥128220-打开git客户端执行命令>1.生成秘钥📜 打开git客户端，执行命令</h4><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>ssh-keygen -t rsa -C <span style=color:#e6db74>&#34;github的邮箱账号&#34;</span>
+</code></pre></div><p>注意，需要给.ssh的7000权限</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo chmod -R <span style=color:#ae81ff>700</span> ~/.ssh
+</code></pre></div><p>去这个目录，寻找<strong>id_rsa.pub</strong>文件，把文件的字符串复制。
+登录官网github.com右上角人头像🤵➜setting a ssh and gpg keys a new ssh key➜制的内容➜add ssh keys</p><h4 id=2-验证秘钥>2. 验证秘钥</h4><p>git客户端输入<code>ssh -T git@github.com</code> ,按提示输入 yes 提示successfully即可</p><h4 id=3-在服务器添加完公钥之后ssh服务器然后报了这个错误>3. 在服务器添加完公钥之后，ssh服务器然后报了这个错误</h4><pre><code>sign_and_send_pubkey: signing failed: agent refused operation
+</code></pre><p>然后执行了以下命令才好。。</p><pre><code>eval &quot;$(ssh-agent -s)&quot;
+ssh-add
+</code></pre><h4 id=4建立身份标识>4.建立身份标识</h4><pre><code>git config --global user.name  'github邮箱用户’
+git config --global user.email  github邮箱用户
+</code></pre><hr><h3 id=案例1把项目提交到github仓库>案例1：把项目提交到github仓库</h3><p>进入d盘，你的项目地址</p><blockquote><p>注意，有时候一些文件隐藏了.gitignore,凡是在目录中包含这个文件，将被忽略提交到github</p></blockquote><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>cd /d
+mkdir www
+cd www
+</code></pre></div><p>创建一个文件随便输入字符保存退出.设置全局编码，防止代码乱码</p><pre><code>git config --global gui.encoding utf-8
+</code></pre><p>把项目缓存本地仓库</p><pre><code>git add *
+</code></pre><p>提交到本地仓库并备注</p><pre><code>git commit –m “修改了文件”
+</code></pre><p>推送到github的仓库</p><blockquote><p>如何创建github仓库，登录官网，人头像旁有个+号 new repository
+创建完毕有有一个项目地址https://xxx.com/unrelaxs/test.git
+创建完仓库后，提交到github仓库</p></blockquote><p>配置一下项目的地址
+<code>git remote add origin https://xxx.com/unrelaxs/test.git</code>
+把本地分支推送到服务器分支上–u表示如果仓库没有则新建一个
+<code>git push –u origin master</code>[默认是master，如果有版本号则填写版本号]</p><p>接着刷新<strong><a href=https://xxx.com/unrelaxs/test.git>https://xxx.com/unrelaxs/test.git</a></strong>这个网址，就能到你修改的内容了</p><h3 id=案例2修改了文件却没有任何的操作想恢复到之前的代码>案例2：修改了文件，却没有任何的操作，想恢复到之前的代码</h3><p>.代表所有文件 或者也可以指定具体路径下的文件
+<code>git checkout -- .</code></p><h3 id=案例3-修改了文件commit到缓冲区了经过了add-和-commit但是没有提交到github>案例3： 修改了文件，commit到缓冲区了（经过了add 和 commit），但是没有提交到github</h3><p><code>git reset HEAD .</code></p><h3 id=案例4删除了文件如何恢复>案例4：删除了文件如何恢复？？</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git log
+</code></pre></div><p>会弹出一个修改的列表：如</p><pre><code>commit c2d7f0dc6196c87e636d121bf7f163ad31d8915d
+</code></pre><p>commit 后的就是id了
+恢复54:35时间的东西</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git checkout id .
+</code></pre></div><h3 id=案例5如何把对应版本代码克隆岛本地>案例5：如何把对应版本代码克隆岛本地</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git clone –b 版本号 代码链接
+</code></pre></div><h3 id=案例6在修改代码前必须要做的事>案例6：在修改代码前，必须要做的事</h3><blockquote><p>在修改前，必须是git pull 更新本地代码</p></blockquote><h3 id=案例7修改本地代码如何提交到服务器>案例7：修改本地代码如何提交到服务器？？</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git pull origin 1.0<span style=color:#f92672>(</span>指定1.0版本<span style=color:#f92672>)</span>或者 git pull
+git add .
+git commit –m “修改了test文件”
+***git push 后的origin1.0 是指定版本，可不填写***
+git push origin 1.0
+</code></pre></div><h3 id=案例8从git上获取项目>案例8：从git上获取项目？？</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git init 初始化一个仓库
+git remote add origin 网址
+git pull origin 分支
+git checkout -b xx分支  <span style=color:#75715e>#如果没有该分支则尝试会创建这个分支</span>
+</code></pre></div><h3 id=案例9从git上面-clone下来的项目后如何拉取次分支以及合并主分支的代码呢>案例9：从git上面 clone下来的项目后，如何拉取次分支以及合并主分支的代码呢？</h3><pre><code>git init
+git clone http://xxxx
+git branch -r 查看远程仓库的分支，如果没有，请重新操作，还是不行，只能百度了
+git pull origin 分支名 注意了 origin是仓库名名，，如果 git branch -r 查看到 xx/origin/mobile  则第一个斜杠后，即origin为仓库名，mobile为分支名
+</code></pre><h3 id=案例10从git上面-clone下来别人的项目后如何提交到自己项目上>案例10：从git上面 clone下来别人的项目后，如何提交到自己项目上？</h3><pre><code>git init
+git clone http://xxx
+git remote add origin http://你自己的项目地址
+git pull origin master --allow-unrelated-histories
+git add .
+git commit -m &quot;版本合并&quot;
+git push origin master
+</code></pre><h3 id=案例11屏蔽某个目录某个文件不提交到git>案例11：屏蔽某个目录，某个文件不提交到git</h3><p><strong>.gitignore</strong>文件语法如下:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># 此为注释 – 将被 Git 忽略</span>
+
+*.a       <span style=color:#75715e># 忽略所有 .a 结尾的文件</span>
+
+!lib.a    <span style=color:#75715e># 但 lib.a 除外</span>
+
+/TODO     <span style=color:#75715e># 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO</span>
+
+build/    <span style=color:#75715e># 忽略 build/ 目录下的所有文件</span>
+
+doc/*.txt <span style=color:#75715e># 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span>
+</code></pre></div><p>在项目根目录创建 <strong>.gitignore</strong></p><h3 id=案例12新建一个分支拉取另外一个分支代码-并把新的分支合并到另外一个分支>案例12：新建一个分支，拉取另外一个分支代码, 并把新的分支合并到另外一个分支</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git checkout -b feature_line
+git pull origin develop  //拉取develop代码
+git add .
+git commit -m <span style=color:#e6db74>&#34;创建了个分支&#34;</span>
+git push origin feature_line
+git checkout -b develop   //切换develop分支
+git pull origin develop
+git merge feature_line   //合并分支
+git push origin develop //推送合并后的结果
+</code></pre></div><h3 id=案例13同个电脑用不同的账号账号对应不同的-github平台>案例13：同个电脑用不同的账号，账号对应不同的 github平台</h3><ol><li>生成<strong>sshkey ssh-keygen -t rsa -C &ldquo;邮箱账号&rdquo;</strong>
+注意不要全部回车键 这里要写存储的路径如</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ ssh-keygen -t rsa -C <span style=color:#e6db74>&#34;gg&#34;</span>
+Generating public/private rsa key pair.
+Enter file in which to save the key <span style=color:#f92672>(</span>/c/Users/Administrator/.ssh/id_rsa<span style=color:#f92672>)</span>: 
+</code></pre></div><p>这里填写绝对路径 或者相对路径 命名两个账号都不同如：<strong>/C/Users/Administrator/.ssh/id_rsa_one</strong></p><p>接着全部回车键，默认</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ ssh-keygen -t rsa -C <span style=color:#e6db74>&#34;gg&#34;</span>
+Generating public/private rsa key pair.
+Enter file in which to save the key <span style=color:#f92672>(</span>/c/Users/Administrator/.ssh/id_rsa<span style=color:#f92672>)</span>: 
+</code></pre></div><p>这里填写绝对路径 或者相对路径 命名两个账号都不同如：<strong>/c/Users/Administrator/.ssh/id_rsa_two</strong></p><ol start=2><li><p>进去/c/Users/Administrator/.ssh/ 这个目录
+把 id_rsa_one.pub 跟two.pub 的秘钥 分别粘贴到不同的平台</p></li><li><p>在这个目录 /c/Users/Administrator/.ssh/ 创建一个config文件，注意没有后缀
+config文件内容如下：</p></li></ol><pre><code>Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa_two
+
+Host github_1033
+  HostName gitee.com
+  IdentityFile ~/.ssh/id_rsa_one
+</code></pre><p>注意了，上面我分别是 github.com 分别对应的是 github.com的平台，秘钥是<strong>id_rsa_two</strong> ，在github后台别粘贴错秘钥！！</p><p>而 github_1033 对应是 gitee.com的平台（码云），秘钥是 <strong>id_rsa_one</strong></p><ol start=4><li>在添加源的时候</li></ol><pre><code>git remote add origin git@github_1033:unrelaxs/object-design.git
+</code></pre><p>码云明天的ssh项目地址是：<strong><a href=mailto:git@gitee.com>git@gitee.com</a>:unrelaxs/object-design.git</strong>
+因此我把gitee.com改为github_1033就行了</p><p>4.1对比两个commit，并导出所有的文件</p><pre><code>git archive -o ./export.zip 39e4d8cc9744877999b3f0554b48afe01ae83114 $(git diff --diff-filter=ACMR --name-only 25a0a906f4eb11d1da9654048c3af95ac50a8dac 39e4d8cc9744877999b3f0554b48afe01ae83114)
+</code></pre><p>a0ca27310aab94205d18c3415bd40b9821de2650 开始 commitId
+7b9cead0f411ce42637f7633cfbb7c9078d3202e 结束 commitId</p><ol start=5><li>忽略某文件夹下所有的内容提交，但保存该文件夹
+在文件夹下 创建一个.gitignore，内容如下</li></ol><pre><code># ignore all except .gitignore file
+*
+!.gitignore
+</code></pre><p>😜</p></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button next"><a href=/post/tech/tech01/><span class=button__text>Pure CSS Lightbox in Hugo theme</span>
+<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user"><span>© 2020 Powered by
+<a href=https://gohugo.io target=_blank rel=noopener>Hugo</a></span>
+<span>Theme created by
+<a href=https://twitter.com/panr target=_blank rel=noopener>panr</a></span></div></div></footer><script src=/assets/main.js></script><script src=/assets/prism.js></script></div></body></html>
