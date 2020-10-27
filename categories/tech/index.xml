@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tech on PR's blog</title><link>/categories/tech/</link><description>Recent content in tech on PR's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 27 Oct 2020 16:20:56 +0800</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Pure CSS Lightbox in Hugo theme</title><link>/post/tech/tech01/</link><pubDate>Tue, 27 Oct 2020 16:20:56 +0800</pubDate><guid>/post/tech/tech01/</guid><description>
+from jlelse&amp;rsquo;s Blog
+Hugo themes have the option to override the default rendering of Markdown images by using “Markdown Render Hooks” since version 0.62.0. By creating a file in layouts/_default/_markup named render-image.html it is possible to use a custom template for rendered images. This gives a lot of flexibility. I just used that flexibility to create a lightbox with pure CSS (without using JavaScript, like many lightbox implementations do).</description></item><item><title>用 Hugo 创建 Blog 站点并部署到 VPS</title><link>/post/use-git-deploy-hugo/</link><pubDate>Mon, 26 Oct 2020 21:01:00 +0800</pubDate><guid>/post/use-git-deploy-hugo/</guid><description>
+本文来源于XEON CHOW博客，并进行修改。
+基本思路 Blog 网站整个的搭建流程大致如下： Windows 本地用 Hugo 进行网站的配置和编辑调试； 使用 Git 工具将 Windows 本地生成的网站文件夹远程部署到 VPS 服务器上； VPS上通过Git Hook自动编译发布网页文件 VPS 上使用 Nginx 作为 Web 网页服务器。 网页申请 SSL 证书并强制开启 HTTPS
+一、VPS端配置情况 1.安装Hugo客户端以及rsync 方式一
+sudo apt-get install hugo hugo version 方式二
+wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_0.76.5_Linux-64bit.tar.gz tar -xzvf hugo_0.76.5_Linux-64bit.tar.gz sudo mv hugo /usr/local/bin/hugo # 随便您想放置的目录即可 hugo version apt install rsync 2.安装Git仓库，并配置权限 apt-get update apt-get install git-core 添加 git 用户
+useradd git vi /etc/sudoers 1.</description></item><item><title>VS Code添加远程仓库</title><link>/post/vs/</link><pubDate>Thu, 22 Oct 2020 09:42:40 +0800</pubDate><guid>/post/vs/</guid><description>
+接下来到当前Repository文件夹根目录中，如果没有初始化过，安装文章开始初始化的方法，进行初始化。 然后执行下面的命令
+git remote add origin https://github.com/xuanhun/vscode.git git pull origin master 现在我们查看一下.git文件夹下的config文件，可以看到添加了远程Reps地址。 再次修改MD，push</description></item></channel></rss>

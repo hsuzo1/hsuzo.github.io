@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on PR's blog</title><link>/tags/github/</link><description>Recent content in Github on PR's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 26 Oct 2020 21:01:00 +0800</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>用 Hugo 创建 Blog 站点并部署到 VPS</title><link>/post/use-git-deploy-hugo/</link><pubDate>Mon, 26 Oct 2020 21:01:00 +0800</pubDate><guid>/post/use-git-deploy-hugo/</guid><description>
+本文来源于XEON CHOW博客，并进行修改。
+基本思路 Blog 网站整个的搭建流程大致如下： Windows 本地用 Hugo 进行网站的配置和编辑调试； 使用 Git 工具将 Windows 本地生成的网站文件夹远程部署到 VPS 服务器上； VPS上通过Git Hook自动编译发布网页文件 VPS 上使用 Nginx 作为 Web 网页服务器。 网页申请 SSL 证书并强制开启 HTTPS
+一、VPS端配置情况 1.安装Hugo客户端以及rsync 方式一
+sudo apt-get install hugo hugo version 方式二
+wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_0.76.5_Linux-64bit.tar.gz tar -xzvf hugo_0.76.5_Linux-64bit.tar.gz sudo mv hugo /usr/local/bin/hugo # 随便您想放置的目录即可 hugo version apt install rsync 2.安装Git仓库，并配置权限 apt-get update apt-get install git-core 添加 git 用户
+useradd git vi /etc/sudoers 1.</description></item></channel></rss>
