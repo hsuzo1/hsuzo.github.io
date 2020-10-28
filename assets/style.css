@@ -926,7 +926,7 @@ blockquote.twitter-tweet {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font-size: 1rem
+	font-size: 0.8rem
 }
 
 .footer .copyright--user {
