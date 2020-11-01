@@ -763,8 +763,12 @@ blockquote.twitter-tweet {
 .post-content {
 	font-family: 'Noto Serif SC','Inter';
 	font-weight: 500;
-	margin-top: 0px; word-break:break-all;
+	margin-top: 0px; 
+	word-break:break-all;
 	min-height: 70px;
+	text-align:justify;
+	text-align-last: auto;
+	text-justify:inter-ideograph;   /* 这行必加，兼容ie浏览器 */
 }
 .post-content h3 {
 	position: relative;left: 2em;margin: 28px auto 18px!important;letter-spacing: 2px;

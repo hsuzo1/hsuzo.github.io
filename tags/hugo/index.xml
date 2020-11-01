@@ -2,4 +2,4 @@
 &lt;img src="https://hugo-1300132103.cos.ap-guangzhou.myqcloud.com/img/cover.png"/>
 from jlelse&amp;rsquo;s Blog
 Hugo themes have the option to override the default rendering of Markdown images by using “Markdown Render Hooks” since version 0.62.0. By creating a file in layouts/_default/_markup named render-image.html it is possible to use a custom template for rendered images. This gives a lot of flexibility. I just used that flexibility to create a lightbox with pure CSS (without using JavaScript, like many lightbox implementations do).</description></item><item><title>用 Hugo 创建 Blog 站点并部署到 VPS</title><link>/post/use-git-deploy-hugo/</link><pubDate>Mon, 26 Oct 2020 21:01:00 +0800</pubDate><guid>/post/use-git-deploy-hugo/</guid><description>
-本文来源于XEON CHOW博客，并进行修改。 基本思路 Blog 网站整个的搭建流程大致如下： Windows 本地用 Hugo 进行网站的配置和编辑调试； 使用 Git 工具将 Windows 本地生成</description></item></channel></rss>
+本文来源于XEON CHOW 博客，并进行修改。 基本思路 Blog 网站整个的搭建流程大致如下： Windows 本地用 Hugo 进行网站的配置和编辑调试； 使用 Git 工具将 Windows 本地生成的网站</description></item></channel></rss>
