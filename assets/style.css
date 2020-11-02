@@ -421,7 +421,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Noto Serif SC',Inter,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,'Noto Serif SC',Segoe UI,Helvetica,Arial,sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	font-feature-settings: "liga","tnum","case","calt","zero","ss01","locl";
@@ -530,7 +530,7 @@ figure figcaption.right {
 }
 
 code,kbd {
-	font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+	font-family: Consolas,Monaco,Andale Mono,"Ubuntu Mono",monospace;
 	background: #eaeaea;
 	background: var(--background-secondary);
 	padding: 1px 6px;
@@ -761,7 +761,7 @@ blockquote.twitter-tweet {
 	}
 }
 .post-content {
-	font-family: 'Noto Serif SC','Inter';
+	font-family: Inter,'Noto Serif SC';
 	font-weight: 500;
 	margin-top: 0px; 
 	word-break:break-all;
